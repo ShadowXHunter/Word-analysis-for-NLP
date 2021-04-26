@@ -3,5 +3,5 @@
 ### Tasks this script performs:
 * Counts all unique words in a file.
 * Counts the frequency of each word.
-* Finds the no of pragrpahs.
+* Finds the no of paragraphs.
 
