@@ -3,5 +3,5 @@
 ### Tasks this script performs:
 * Counts all unique words in a file.
 * Counts the frequency of each word.
-* Finds the no of paragraphs.
+* Finds the most frequent words after removing common english stop words
 
