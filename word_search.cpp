@@ -44,6 +44,6 @@ int main()
       cout<<str.back()<<":"<<dict[str.back()]<<endl;
       str.pop_back();
     }    
-    
+    cout<<"\nTotal unique words: "<<dict.size();
     
 }
