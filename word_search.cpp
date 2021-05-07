@@ -65,7 +65,8 @@ int main()
     {
         stwords.insert(word);
     }
-    
+    f.close();
+  
     while(file>>word)
     {
         //symbols removed
@@ -90,6 +91,8 @@ int main()
           str.push_back(word);
         }
     }
+    file.close();
+  
     cout<<"\nPrinting word frequency...\n";
     while(!str.empty())
     {
