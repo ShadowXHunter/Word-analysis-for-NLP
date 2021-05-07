@@ -30,7 +30,7 @@ void most_frequent(map<string, int>& dict, set<string>& stwords)
     sort(A.begin(), A.end(), cmp);
   
     //Print the most frequent words
-    cout<<"\n20 most frequent words after removing the stop words are:\n"<<endl;
+    cout<<"\n20 most frequent words after removing the stop words:\n"<<endl;
     for (auto it = A.begin(); it != A.end() && counter<20; it++) {
         //display words if not in stop words list
         if(!stwords.count(it->first)){
@@ -57,7 +57,7 @@ int main()
       else cout<<"\nINVALID CHOICE! Try Again.\n";
     }
     string word;
-    char symbols[] = {'.', '?', '!', ',', ':', ';', '"', '_', '-', '@', '$', '&', '%', '#', '(', ')'};
+    char symbols[] = {'.', '?', '!', ',', ':', ';', '"', '_', '-', '@', '$', '&', '%', '#', '(', ')', '{', '}', '[', ']', '/', '<', '>', '|', '*', '+', '=', '`', '~'};
     //container to store the english stop words 
     set<string> stwords;
     vector<string> str;
@@ -99,7 +99,7 @@ int main()
     cout<<"\nTotal unique words: "<<dict.size()<<"\n";
     //print most frequent words
     most_frequent(dict, stwords);
-    //search frequency of particular word
+    //search for particular word frequency
     cout<<"\nSearch for frequency of a particular word?  y/n: ";
     cin>>word;
     transform(word.begin(), word.end(), word.begin(), ::tolower);
